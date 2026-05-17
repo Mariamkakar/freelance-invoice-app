@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Invoice App</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <h2>InvoiceApp</h2>
+
+      <div>
+        <a href="index.html">Dashboard</a>
+        <a href="clients.html">Clients</a>
+        <a href="invoices.html">Invoices</a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Dashboard Overview</h1>
+      <p>Manage your clients and invoices easily</p>
+    </header>
+
+    <section class="stats">
+      <div class="card">
+        <h3>Total Clients</h3>
+        <p id="totalClients">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Total Invoices</h3>
+        <p id="totalInvoices">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Total Revenue</h3>
+        <p>$<span id="totalRevenue">0</span></p>
+      </div>
+
+      <div class="card">
+        <h3>Paid</h3>
+        <p id="paidCount">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Unpaid</h3>
+        <p id="unpaidCount">0</p>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote-card">
+      <h2>Motivation</h2>
+      <p id="quoteText">Loading...</p>
+      <small id="quoteAuthor"></small>
+    </section>
+
+    <!-- SCRIPT -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

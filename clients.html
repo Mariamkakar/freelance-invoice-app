@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Clients Management</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h2>Freelance App</h2>
+
+      <div class="nav-links">
+        <a href="index.html">Dashboard</a>
+        <a href="clients.html">Clients</a>
+        <a href="invoices.html">Invoices</a>
+      </div>
+    </nav>
+
+    <main class="container">
+      <h1>Clients Management</h1>
+
+      <form id="clientForm" class="client-form">
+        <input type="text" id="name" placeholder="Client Name" required />
+
+        <input type="email" id="email" placeholder="Client Email" required />
+
+        <input type="text" id="company" placeholder="Company Name" />
+
+        <input type="text" id="notes" placeholder="Notes" />
+
+        <button type="submit">Save Client</button>
+      </form>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+
+              <th>Email</th>
+
+              <th>Company</th>
+
+              <th>Notes</th>
+
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody id="clientsTable"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script type="module" src="./js/clients.js"></script>
+  </body>
+</html>
